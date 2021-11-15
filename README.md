@@ -11,7 +11,7 @@ CSS
 ```
 JS
 ```
-<img width="321" alt="Screenshot 2021-11-11 124214" src="https://user-images.githubusercontent.com/64314222/141269220-c9f48e7d-10c3-4ac0-bd3d-542776e50e63.png"> 
+![video-to-gif-converter (1)](https://user-images.githubusercontent.com/64314222/141820964-4f66f44c-4a51-45c2-9840-cec13e473a7f.gif)
 
 ### Languages and Tools:
 
