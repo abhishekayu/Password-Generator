@@ -66,14 +66,14 @@
         -moz-animation: glow 1s ease-in-out infinite alternate;
         animation: container 1s ease-in-out infinite alternate;
     }
-    @-webkit-keyframes container {
+/*     @-webkit-keyframes container {
         from {
             box-shadow: 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 5px #e60073, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 30px #e60073, 0 0 50px #e60073, rgba(0, 0, 0, 0.5);
         }
         to {
             box-shadow: 0 0 30px rgb(0, 0, 0), 0 0 10px #ff4da6, 0 0 20px #ff4da6, 0 0 20px #ff4da6, 0 0 20px #ff4da6, 0 0 20px #ff4da6, 0 0 80px #ff4da6;
         }
-    }
+    } */
     
     .result-container {
         background-color: #747474;
