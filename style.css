@@ -62,9 +62,9 @@
         border-radius: 20px;
         border-radius: 20px;
         color: #fff;
-        -webkit-animation: glow 1s ease-in-out infinite alternate;
+/*         -webkit-animation: glow 1s ease-in-out infinite alternate;
         -moz-animation: glow 1s ease-in-out infinite alternate;
-        animation: container 1s ease-in-out infinite alternate;
+        animation: container 1s ease-in-out infinite alternate; */
     }
 /*     @-webkit-keyframes container {
         from {
