@@ -1,5 +1,5 @@
 # Password-Generator
-It is help to generate strong password for you as per your choice.
+It is help to generate strong password for you as per your choice including emojies.
 
 ![github](https://user-images.githubusercontent.com/64314222/93706374-380d5580-fb43-11ea-8a99-3a6827940e64.gif)
 ```
