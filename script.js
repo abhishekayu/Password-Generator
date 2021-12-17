@@ -4,13 +4,15 @@ const uppercaseEl = document.getElementById('uppercase');
 const lowercaseEl = document.getElementById('lowercase');
 const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
+const emojis = document.getElementById('emoji');
 const generateEl = document.getElementById('generate');
 const clipboard = document.getElementById('clipboard');
 const randomFunc = {
     lower: getRandomLower,
     upper: getRandomUpper,
     number: getRandomNumber,
-    symbol: getRandomSymbol
+    symbol: getRandomSymbol,
+    emojii: getRandomEmoji,
 }
 
 clipboard.addEventListener('click', () => {
@@ -32,14 +34,15 @@ generateEl.addEventListener('click', () => {
     const hasUpper = uppercaseEl.checked;
     const hasNumber = numbersEl.checked;
     const hasSymbol = symbolsEl.checked;
+    const hasEmoji = emojis.checked;
 
-    resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
+    resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length, hasEmoji);
 });
 
-function generatePassword(lower, upper, number, symbol, length) {
+function generatePassword(lower, upper, number, symbol, length, emojii) {
     let generatedPassword = '';
-    const typesCount = lower + upper + number + symbol;
-    const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
+    const typesCount = lower + upper + number + symbol + emojii;
+    const typesArr = [{ lower }, { upper }, { number }, { symbol }, { emojii }].filter(item => Object.values(item)[0]);
     if (typesCount === 0) {
         return 'Select atleast 1 option';
     }
@@ -71,4 +74,9 @@ function getRandomNumber() {
 function getRandomSymbol() {
     const symbols = '!@#$%^&*(){}[]=<>/,.'
     return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
+function getRandomEmoji() {
+    const em = ':):(:-x({)'
+    return em[Math.floor(Math.random() * em.length)];
 }
